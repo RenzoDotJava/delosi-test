@@ -1,0 +1,33 @@
+div.matrices-container {
+  display: flex;
+  gap: var(--subcontainer-gap);
+  flex: 1;
+  /* padding: 24px 0 ; */
+
+  &>div.matrix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    gap: 28px;
+    width: var(--field-width);
+    width: 100px;
+    align-items: center;
+
+    &>label {
+      font-size: var(--font-size-lg);
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  div.matrices-container {
+    flex-direction: column;
+    gap: 48px;
+
+    &>div.matrix {
+      width: 100%;
+    }
+  }
+}

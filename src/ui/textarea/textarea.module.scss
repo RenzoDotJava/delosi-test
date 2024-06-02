@@ -1,0 +1,29 @@
+textarea.container {
+  min-height: 120px;
+  max-width: 100%;
+  min-width: 100%;
+  font-size: var(--font-size-md);
+  font-family: var(--font-family-roboto), sans-serif;
+  background-color: transparent;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  border-color: var(--color-neutral-dark);
+
+  padding: 10px 12px;
+  border-radius: 4px;
+  outline: none;
+
+  &:focus {
+    border: 2px solid var(--color-primary);
+  }
+
+  &:disabled {
+    background-color: var(--color-neutral-light);
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  textarea.container { 
+    min-height: 80px;
+  }
+}
