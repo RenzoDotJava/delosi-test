@@ -17,6 +17,29 @@ div.main-container {
   }
 }
 
+div.not-found-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+  text-align: center;
+  padding: 32px;
+
+  & > .link {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: var(--color-primary);
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 @media only screen and (max-width: 1280px) {
   div.main-container {
     padding: 64px 50px;
