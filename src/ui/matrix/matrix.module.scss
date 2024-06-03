@@ -1,0 +1,14 @@
+.grid-container {
+  display: grid;
+  transition: all 0.3s ease-in-out;
+
+  &>.grid-item {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: --color-primary;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
