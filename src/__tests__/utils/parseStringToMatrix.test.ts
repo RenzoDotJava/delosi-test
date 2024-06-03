@@ -1,5 +1,5 @@
 import { EMPTY_MATRIX, INVALID_NUMBER_MATRIX, INVALID_NXN_MATRIX, MAX_SIZE_MATRIX, OVER_MAX_SIZE_MATRIX } from "@/constants"
-import generateMatrix from "@/utils/generateMatrix"
+import generateEmptyMatrix from "@/utils/generateEmptyMatrix"
 import parseStringToNumberMatrix from "@/utils/parseStringToMatrix"
 
 describe('when the parseStringToMatrix function is called', () => {
@@ -29,7 +29,7 @@ describe('when the parseStringToMatrix function is called', () => {
   })
 
   it('should throw OVER_MAX_SIZE_MATRIX error message', () => {
-    const input = JSON.stringify(generateMatrix(MAX_SIZE_MATRIX + 1))
+    const input = JSON.stringify(generateEmptyMatrix(MAX_SIZE_MATRIX + 1))
 
     expect(() => parseStringToNumberMatrix(input)).toThrow(OVER_MAX_SIZE_MATRIX)
   })

@@ -1,5 +1,5 @@
 import { MainPage } from "@/components/pages";
 
-export default function Home() {
+export default function MatrixRotator() {
   return <MainPage />
 }

@@ -1,4 +1,5 @@
 type GridProps = {
+  id?: string;
   matrix: number[][];
 }
 

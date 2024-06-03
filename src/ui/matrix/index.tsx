@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './matrix.module.scss'
 import getMatrixTemplate from '@/utils/getMatrixTemplate';
 
-const Matrix: React.FC<GridProps> = ({ matrix }) => {
+const Matrix: React.FC<GridProps> = ({ matrix, id }) => {
 
   const createGrid = () => {
     const gridItems: React.JSX.Element[] = [];
@@ -20,6 +20,8 @@ const Matrix: React.FC<GridProps> = ({ matrix }) => {
 
   return (
     <div
+      id={id}
+      data-testid={id}
       className={styles['grid-container']}
       style={{
         gridTemplateColumns: getMatrixTemplate(matrix.length),

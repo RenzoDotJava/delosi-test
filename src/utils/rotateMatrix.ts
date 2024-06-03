@@ -1,8 +1,9 @@
 import { INVALID_NXN_MATRIX } from "@/constants";
+import generateEmptyMatrix from "./generateEmptyMatrix";
 
 export default function rotateMatrix(matrix: number[][]): number[][] {
   let xLength = matrix.length;
-  let rotatedMatrix: number[][] = [...Array(xLength)].map(_ => Array(xLength).fill(0));
+  let rotatedMatrix: number[][] = generateEmptyMatrix(xLength);
 
   for (let x = 0; x < xLength; x++) {
     let yLength = matrix[x].length;
