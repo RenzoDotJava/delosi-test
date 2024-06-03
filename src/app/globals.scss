@@ -15,24 +15,6 @@
 
   --subcontainer-gap: 36px;
   --field-width: calc(50% - var(--subcontainer-gap)/2);
-
-  --matrix-size: 54px;
-
-  @media screen and (max-width: 1280px) {
-    --matrix-size: 48px;
-  }
-
-  @media screen and (max-width: 1024px) {
-    --matrix-size: 42px;
-  }
-
-  @media screen and (max-width: 768px) {
-    --matrix-size: 36px;
-  }
-
-  @media screen and (max-width: 640px) {
-    --matrix-size: 30px;
-  }
 }
 
 * {

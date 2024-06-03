@@ -1,3 +1,4 @@
+'use client'
 import { createContext, useContext, useEffect, useState } from "react";
 import useDebounce from "@/hooks/useDebounce";
 import useToggle from "@/hooks/useToggle";

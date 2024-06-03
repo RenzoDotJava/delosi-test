@@ -1,0 +1,30 @@
+div.main-container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 64px 200px;
+  gap: 36px;
+  transition: all 0.3s ease-in-out;
+
+  &>h1 {
+    text-align: center;
+  }
+
+  &>div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  div.main-container {
+    padding: 64px 50px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  div.main-container {
+    padding: 64px 25px;
+  }
+}

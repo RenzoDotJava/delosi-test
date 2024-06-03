@@ -1,0 +1,1 @@
+export { default as MatrixRotator } from './matrix-rotator'
