@@ -1,0 +1,85 @@
+div.matrix-rotator-container {
+  display: flex;
+  gap: var(--subcontainer-gap);
+
+  &>div.field {
+    display: flex;
+    flex-direction: column;
+    width: var(--field-width);
+    max-height: 240px;
+    gap: 12px;
+
+    &>div {
+      display: flex;
+      justify-content: space-between;
+
+      &>button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 0 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.1s ease-in-out;
+        font-family: var(--font-size-roboto);
+
+        &:disabled {
+          background-color: gray;
+          opacity: 0.8;
+          cursor: auto;
+        }
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    label {
+      font-size: var(--font-size-lg);
+      font-weight: bold;
+    }
+  }
+}
+
+div.matrices-container {
+  display: flex;
+  gap: var(--subcontainer-gap);
+  flex: 1;
+
+  &>div.matrix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    gap: 28px;
+    width: var(--field-width);
+    width: 100px;
+    align-items: center;
+
+    &>label {
+      font-size: var(--font-size-lg);
+      font-weight: bold;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  div.matrix-rotator-container {
+    flex-direction: column;
+
+    &>div.field {
+      width: 100%;
+    }
+  }
+
+  div.matrices-container {
+    flex-direction: column;
+    gap: 48px;
+
+    &>div.matrix {
+      width: 100%;
+    }
+  }
+}
